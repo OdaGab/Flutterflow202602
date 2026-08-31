@@ -47,6 +47,7 @@ dependencies:
   path_provider_linux: 2.2.1
   path_provider_platform_interface: 2.1.2
   path_provider_windows: 2.3.0
+  pin_code_fields: 8.0.1
   provider: 6.1.5
   shared_preferences: 2.5.3
   shared_preferences_android: 2.4.10
