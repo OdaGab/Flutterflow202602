@@ -2,6 +2,7 @@ import '/flutter_flow/flutter_flow_button_tabbar.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/index.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -163,7 +164,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                   text: 'Entrar',
                                 ),
                                 Tab(
-                                  text: 'Cadastrar',
+                                  text: 'Confimação',
                                 ),
                               ],
                               controller: _model.tabBarController,
@@ -894,8 +895,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                 MainAxisAlignment.center,
                                             children: [
                                               FFButtonWidget(
-                                                onPressed: () {
-                                                  print('Button pressed ...');
+                                                onPressed: () async {
+                                                  context.pushNamed(
+                                                      PGcadastroWidget
+                                                          .routeName);
                                                 },
                                                 text: 'Cadastrar',
                                                 options: FFButtonOptions(

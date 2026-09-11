@@ -73,6 +73,21 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: HomePageWidget.routeName,
           path: HomePageWidget.routePath,
           builder: (context, params) => HomePageWidget(),
+        ),
+        FFRoute(
+          name: PGcadastroWidget.routeName,
+          path: PGcadastroWidget.routePath,
+          builder: (context, params) => PGcadastroWidget(),
+        ),
+        FFRoute(
+          name: Pagina03Widget.routeName,
+          path: Pagina03Widget.routePath,
+          builder: (context, params) => Pagina03Widget(),
+        ),
+        FFRoute(
+          name: PGDevWidget.routeName,
+          path: PGDevWidget.routePath,
+          builder: (context, params) => PGDevWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
